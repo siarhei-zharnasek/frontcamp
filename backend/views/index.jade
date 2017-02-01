@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href='/articles') Add article
+  if isAuthenticated
+    div
+      div.logout
+        a(href='/users/logout') Logout
+  else
+    div
+      div.register
+        a(href='/users') Register
+      div.login
+        a(href='/login') Login
+  .row#articles-container
+    each article in articles
+     .col-sm-6.col-md-4
+       .thumbnail
+         img(src=article.urlToImage, alt='news picture')
+         .caption
+           h3= article.title
+           p= article.description
+           p= article.author
+           div
+             a.btn.btn-primary(href=`articles/${article.articleId}`, role='button') Details
+             div.btn.btn-default(onclick='removeArticle(#{article.articleId})') Remove

@@ -1,0 +1,18 @@
+{
+  "name": "Advisor",
+  "version": "0.0.0",
+  "authors": [
+    "nreshetnikov@colemanrg.com <Nikita_Reshetnikov@epam.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-cookies": "~1.4.8"
+  }
+}

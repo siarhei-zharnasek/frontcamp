@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  a(href='/') Index
+  .row#articles-container
+   .col-sm-6.col-md-4
+     .thumbnail
+       img(src=article.urlToImage, alt='news picture')
+       .caption
+         h3= article.title
+         p= article.description
+         p= article.author

@@ -1,0 +1,71 @@
+{
+  "name": "coleman_expert_module",
+  "version": "1.0.0",
+  "description": "Coleman expert module",
+  "scripts": {
+    "build": "webpack --config webpack.build.js",
+    "dev": "webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "karma start",
+    "test:live": "karma start --auto-watch --no-single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://colemanrg.visualstudio.com/DefaultCollection/KB_Modules/_git/ClientModules"
+  },
+  "author": "Sergei",
+  "license": "MIT",
+  "babel": {
+    "stage": 1
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-local-storage": "^0.2.7",
+    "angular-mocks": "^1.6.1",
+    "angular-module-cookies": "^1.2.19",
+    "angular-ui-bootstrap": "^0.14.3",
+    "angular-ui-router": "^0.4.2",
+    "lodash": "~3.6.0"
+  },
+  "devDependencies": {
+    "angular-local-storage": "^0.2.2",
+    "angular-mocks": "^1.5.0-beta.2",
+    "angular-module-cookies": "^1.2.19",
+    "angular-ui-bootstrap": "^0.14.3",
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^5.8.29",
+    "babel-loader": "^5.3.2",
+    "babel-runtime": "^5.8.29",
+    "bootstrap": "^3.3.5",
+    "bower": "^1.7.0",
+    "css-loader": "^0.21.0",
+    "eslint": "^1.9.0",
+    "eslint-loader": "^1.1.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "html-loader": "^0.3.0",
+    "html-webpack-plugin": "^1.6.2",
+    "isparta-instrumenter-loader": "^0.2.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.14",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-sourcemap-loader": "^0.3.6",
+    "karma-spec-reporter": "0.0.21",
+    "karma-webpack": "^1.7.0",
+    "loader-utils": "^0.2.11",
+    "ng-annotate-loader": "0.0.10",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "node-libs-browser": "^0.5.3",
+    "node-sass": "^3.4.2",
+    "null-loader": "^0.1.1",
+    "phantomjs": "^1.9.18",
+    "postcss-loader": "^0.7.0",
+    "resolve-url-loader": "^1.4.2",
+    "sass-loader": "^3.1.1",
+    "source-map": "^0.5.3",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  }
+}

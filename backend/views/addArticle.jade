@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to FrontCamp, Bro 
+  form(name='create-article', method='POST', action='/articles', enctype='multipart/form-data')
+     .form-group
+       label(for='title') Title:
+       input#text.form-control(type='text', required='', name='title', autofocus='')
+     .form-group
+       label(for='description') Description:
+       textarea#description.form-control(required='', name='description')
+     .form-group
+       label(for='image') Image:
+       input#image.form-control(type='file', name='pic')
+     button.btn.btn-default(type='submit') Create

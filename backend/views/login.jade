@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  span= 'Login or '
+  a.register(href='/users') Register
+  form(name='login', method='POST', action='/users/login')
+     .form-group
+       label(for='username') Username:
+       input#text.form-control(type='text', required='', name='username', autofocus='')
+     .form-group
+       label(for='password') Password:
+       input#password.form-control(type='password', required='', name='password')
+     button.btn.btn-default(type='submit') Login

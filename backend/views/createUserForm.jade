@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= 'Add new user here'
+  form(name='create-user', method='POST', action='/users')
+     .form-group
+       label(for='username') Username:
+       input#text.form-control(type='text', required='', name='username', autofocus='')
+     .form-group
+       label(for='password') Password:
+       input#password.form-control(type='password', required='', name='password')
+     button.btn.btn-default(type='submit') Create
